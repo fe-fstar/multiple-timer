@@ -3,13 +3,9 @@ export const defaultLocale = 'en';
 export const localeDetection = false;
 export const localePrefix = 'as-needed';
 export const pathnames = {
-    "/register": {
-        en: "/register",
-        tr: "/kayit"
-    },
-    "/login": {
-        en: "/login",
-        tr: "/giris"
+    "/login-register": {
+        en: "/login-register",
+        tr: "/giris-kayit"
     },
     "/logout": {
         en: "/logout",
