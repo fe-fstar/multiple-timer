@@ -1,17 +1,21 @@
 import { getUser } from "@/app/queries/user";
 import LoginRegisterSwitch from "@/components/LoginRegisterSwitch";
-import RegisterForm from "@/components/RegisterForm";
 
-export default async function LoginRegisterPage({ params }) {
+export default async function LoginRegisterPage({ params, searchParams }) {
     let user = await getUser();
     if (user) {
         let [redirect, locale] = await Promise.all([
             import("@/i18n/routing").then(mod => mod.redirect),
-            params.locale]);
+            params.locale,
+
+        ]);
 
         redirect({ href: "/", locale });
     }
+
+    let defaultForm = (await searchParams).referer;
+
     return <main className="page min-h-screen grid place-items-center">
-        <LoginRegisterSwitch/>
+        <LoginRegisterSwitch defaultForm={defaultForm} />
     </main>;
 }

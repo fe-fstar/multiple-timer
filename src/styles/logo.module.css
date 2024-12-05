@@ -1,0 +1,83 @@
+.animated_path_1 {
+    animation: animate_path_1 6000ms linear infinite normal forwards;
+}
+@keyframes animate_path_1 {
+    0% {
+        transform: translate(901.80554px, 5958.09741px) rotate(0deg);
+    }
+    16.666667% {
+        transform: translate(901.80554px, 5958.09741px) rotate(0deg);
+    }
+    66.666667% {
+        transform: translate(901.80554px, 5958.09741px) rotate(-30deg);
+        animation-timing-function: cubic-bezier(0.495, 0, 0.5, 1.005);
+    }
+    83.333333% {
+        transform: translate(901.80554px, 5958.09741px) rotate(0deg);
+    }
+    100% {
+        transform: translate(901.80554px, 5958.09741px) rotate(0deg);
+    }
+}
+.animated_path_2 {
+    animation: animate_path_2 6000ms linear infinite normal forwards;
+}
+@keyframes animate_path_2 {
+    0% {
+        opacity: 1;
+    }
+    16.666667% {
+        opacity: 0;
+    }
+    83.333333% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.animated_path_3 {
+    animation: animate_path_3 6000ms linear infinite normal forwards;
+}
+@keyframes animate_path_3 {
+    0% {
+        transform: translate(901.80554px, 5958.09741px) rotate(0deg);
+    }
+    16.666667% {
+        transform: translate(901.80554px, 5958.09741px) rotate(0deg);
+    }
+    66.666667% {
+        transform: translate(901.80554px, 5958.09741px) rotate(-360deg);
+        animation-timing-function: cubic-bezier(0.495, 0, 0.5, 1.005);
+    }
+    83.333333% {
+        transform: translate(901.80554px, 5958.09741px) rotate(0deg);
+    }
+    100% {
+        transform: translate(901.80554px, 5958.09741px) rotate(0deg);
+    }
+}
+.animated_path_4 {
+    animation: animate_path_4 6000ms linear infinite normal forwards;
+}
+@keyframes animate_path_4 {
+    0% {
+        transform: translate(135.33781px, 207.03926px) rotate(720deg);
+        animation-timing-function: cubic-bezier(0.415, 0.08, 0.115, 0.955);
+    }
+    100% {
+        transform: translate(135.33781px, 207.03926px) rotate(158.961039deg);
+    }
+}
+.animated_path_5 {
+    animation: animate_path_5 6000ms linear infinite normal forwards;
+}
+@keyframes animate_path_5 {
+    0% {
+        transform: translate(11.12px, 29.9px) rotate(-720deg);
+        animation-timing-function: cubic-bezier(0.415, 0.08, 0.115, 0.955);
+    }
+    100% {
+        transform: translate(11.12px, 29.9px) rotate(-158.961039deg);
+    }
+}

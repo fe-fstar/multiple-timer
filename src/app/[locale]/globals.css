@@ -57,4 +57,8 @@
   .form-failure {
     @apply border-l-4 border-crimson ps-2 text-sm;
   }
+
+  .text-only {
+    @apply !p-0 !bg-transparent !text-foreground hover:!text-foreground hover:!bg-transparent !font-light !text-base !border-0 !outline-0;
+  }
 }
