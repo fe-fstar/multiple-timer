@@ -11,7 +11,7 @@ export default function RegisterForm() {
     const [state, action, pending] = useActionState(register);
 
     return (
-        <Form className="py-8 space-y-8" action={action}>
+        <Form className="space-y-8" action={action}>
             <h1 className="text-4xl text-center font-medium">Register</h1>
             <hr />
             <div className="mx-auto space-y-4 flex flex-col w-[min(100%,480px)] items-stretch">

@@ -18,13 +18,14 @@
     --secondary-foreground: 0 0% 98%;
     --muted: 0 0% 15%;
     --muted-foreground: 240 5% 64.9%;
+    --header: 64px;
     --accent: 12 6.5% 15.1%;
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
-    --ring: 346.8 77.2% 49.8%;
+    --ring: 12 85% 79%;
     --radius: 0.3rem;
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
@@ -47,7 +48,7 @@
 
 @layer components {
   .custom-container {
-    @apply w-[min(100%,640px)] ms-auto me-auto ps-2 pe-2;
+    @apply w-[min(100%,640px)] ms-auto me-auto ps-2 pe-2 py-8;
   }
 
   .page {
@@ -60,5 +61,9 @@
 
   .text-only {
     @apply !p-0 !bg-transparent !text-foreground hover:!text-foreground hover:!bg-transparent !font-light !text-base !border-0 !outline-0;
+  }
+
+  .glassmorphism {
+    @apply !text-foreground !bg-background/60 !backdrop-blur-sm !rounded-lg !border !border-foreground/20;
   }
 }

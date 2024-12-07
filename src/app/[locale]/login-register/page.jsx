@@ -13,9 +13,9 @@ export default async function LoginRegisterPage({ params, searchParams }) {
         redirect({ href: "/", locale });
     }
 
-    let defaultForm = (await searchParams).referer;
+    let defaultForm = (await searchParams)?.referer || "login";
 
-    return <main className="page min-h-screen grid place-items-center">
+    return <main className="page">
         <LoginRegisterSwitch defaultForm={defaultForm} />
     </main>;
 }

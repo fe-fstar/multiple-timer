@@ -16,7 +16,11 @@ export const pathnames = {
         tr: "/hesap"
     },
     "/forgot-password": {
-        en: "forgot-password",
-        tr: "sifremi-unuttum"
+        en: "/forgot-password",
+        tr: "/sifremi-unuttum"
     },
+    "/create-plan": {
+        en: "/create-plan",
+        tr: "/plan-olustur"
+    }
 };

@@ -5,8 +5,8 @@ import { Button } from "@/components/ui/button";
 export default function HomePage() {
   const m = useTranslations("HomePage");
   return (
-    <div className="page *:min-h-screen flex flex-col justify-center items-center">
-      <section className="flex flex-col items-center justify-center gap-y-4">
+    <div className="page *:min-h-screen first:*:min-h-screen-minus-header flex flex-col justify-center items-center">
+      <section className="flex flex-col items-center justify-center gap-y-4 text-center text-balance">
         <h1 className="text-6xl max-sm:text-5xl font-semibold">
           {m.rich("title", {
             gradient: (chunks) => (
