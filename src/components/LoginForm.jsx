@@ -11,7 +11,7 @@ export default function LoginForm() {
     const [state, action, pending] = useActionState(login);
 
     return (
-        <Form className="py-8 *:mb-8 last:*:mb-0" action={action}>
+        <Form className="*:mb-8 last:*:mb-0" action={action}>
             <h1 className="text-4xl text-center font-medium">Login</h1>
             <hr />
             <div className="mx-auto space-y-4 flex flex-col w-[min(100%,480px)] items-stretch">

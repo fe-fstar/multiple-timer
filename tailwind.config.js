@@ -9,6 +9,17 @@ export const theme = {
 		fontFamily: {
 			optika: ["var(--font-optika)"]
 		},
+		height: {
+			header: "var(--header)",
+			"screen-minus-header": "calc(100dvh - var(--header))"
+		},
+		minHeight: {
+			header: "var(--header)",
+			"screen-minus-header": "calc(100dvh - var(--header))"
+		},
+		padding: {
+			header: "var(--header)"
+		},
 		colors: {
 			background: 'hsl(var(--background))',
 			foreground: 'hsl(var(--foreground))',

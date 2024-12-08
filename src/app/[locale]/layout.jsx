@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from '@/components/Header';
 
 const optika = localFont({
   variable: "--font-optika",
@@ -106,6 +107,7 @@ export default async function LocaleLayout({ children, params }) {
     <html lang={locale} className={optika.variable}>
       <body className='font-optika font-light text-foreground bg-[rgba(0,0,0,0.8)] bg-[url("/images/bg-sm.webp")] sm:bg-[url("/images/bg-md.webp")] lg:bg-[url("/images/bg.webp")] bg-no-repeat bg-center bg-fixed bg-blend-darken bg-cover overflow-x-hidden selection:bg-primary selection:text-background'>
         <NextIntlClientProvider messages={messages}>
+          <Header/>
           {children}
         </NextIntlClientProvider>
       </body>
